@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <title>Avalie Mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+<div class="margin-header">
+  <header>
+    <h1>Avalie a sua mentoria</h1>
+
+    <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+    <img src="image/message.svg" alt="Balão de mensagem">
+  </header>
+</div>
+
+
+  <div class="information">
+    <legend>
+      Informações pessoais
+    </legend>
+  </div>
+<form>
+
+  <div class="full">
+    <fieldset>
+
+    <div class="fieldset-warpper">
+    <div class="colun-2">
+      <div class="input-warpper">
+        <label for="name">Nome</label>
+        <input type="text" id="name"
+        required
+        minlength="8">
+      </div>
+
+    <div class="input-warpper">
+        <label for="name">Sobrenome</label>
+        <input type="text" id="name">
+      </div>
+    </div>
+
+    <div class="input-warpper">
+      <label for="e-mail">Email<span>(digite um email válido)</span></label>
+      <input type="email" id="e-mail">
+    </div>
+  </div>
+    </fieldset>
+
+    <fieldset>
+  
+        <legend>
+          Informações do mentor
+        </legend>
+
+        <div class="fieldset-warpper">
+
+        <div class="input-warpper">
+          <label for="selection">Selecione quem foi o seu mentor</label>
+          <select id="selection">
+            <option value="mentor">Fábio Baca</option>
+            <option value="mentor">Cleitu Raxta</option>
+            <option value="mentor">Angelina Julie</option>
+            <option value="mentor">Ivete Mangalu</option>
+          </select>
+        </div>
+
+        <div class="input-warpper">
+          <label for="feedback">Feedback sobre o mentor</label>
+          <textarea id="feedback"></textarea>
+        </div>
+
+        <div class="checkbox-warpper">
+          <input type="checkbox" id="doubts">
+          <label for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Agendando próxima mentoria</legend>
+
+      <div class="colun-3">
+        <div class="date-warpper">
+          <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+          <input type="date" id="date">
+        </div>
+
+      <div class="times">
+        <div class="times-warpper">
+          <label for="begin">Das</label>
+          <input type="time" id="begin">
+        </div>
+        
+        <div class="times-warpper">
+          <label for="end">Até</label>
+          <input type="time" id="end">
+        </div>
+      </div>
+          
+      </div>
+    </fieldset>
+
+    <button>SALVAR</button>
+
+  </div>
+
+
+
+  </form>
+  </div>
+  
+</body>
+</html>
